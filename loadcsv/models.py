@@ -1,3 +1,11 @@
 from django.db import models
 
-# Create your models here.
+
+class ModelWithCSV(models.Model):
+    class Meta:
+        abstract = True
+
+    class CSV:
+        field_delimeter = ","
+        line_end = "\n"
+        cmd_extra = ""
