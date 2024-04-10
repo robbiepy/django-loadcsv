@@ -1,0 +1,31 @@
+[project]
+name = "django-loadcsv"
+description = "django command to import a csv file into an mysql table"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["django"]
+authors = [
+  {name = "Robert Smith"}, 
+  {email = "robbiepy@runbox.com"}
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Topic :: Utilities",
+  "License :: OSI Approved :: GNU Lesser General Public License v3 or later"
+]
+dependencies = []
+dynamic = ["version"]
+
+[project.urls]
+homepage = "https://github.com/robbiepy/django-loadcsv"
+
+[tool.setuptools.dynamic]
+version = {attr = "loadcsv.__version__"}
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
